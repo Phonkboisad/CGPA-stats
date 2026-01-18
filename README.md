@@ -47,8 +47,42 @@ gcc student_system.c -o student_system
 ```
 Note: **Ensure header.txt is in the same directory as the executable to see the branded ASCII logo**
 
+## 🛠️ Building with CMake
+
+This project uses **CMake** for cross-platform build automation. This is the recommended method for compiling the three-file structure (`main.c`, `functions.c`, and `student.h`).
+
+### 1. Prerequisites
+* **CMake** (v3.10 or higher)
+* **GCC** or **Clang** compiler
+
+### 2. Build Instructions
+From the project root directory, run the following commands:
+
+```bash
+# 1. Create a build directory to keep the source clean
+mkdir build
+cd build
+
+# 2. Generate the build files
+cmake ..
+
+# 3. Build the executable
+cmake --build .
+```
+###Running the App
+After a successful build, the executable will be located in the build folder:
+```bash
+.\student.exe
+```
+Linux/macOS:
+```bash
+./student_app
+```
+
+
 
 👥 Contributors
+
 [https://github.com/Phonkboisad] - Lead Developer / Architecture
 
 [https://github.com/alamin2507, https://github.com/elmantouhid09] - UI Design / Testing
