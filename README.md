@@ -43,3 +43,12 @@ Ensure you have a C compiler installed (GCC, Clang, or MSVC).
 Compile the program using GCC:
 ```bash
 gcc student_system.c -o student_system
+./student_system
+```
+Note: **Ensure header.txt is in the same directory as the executable to see the branded ASCII logo**
+👥 Contributors
+[Sadman Bin Morshed] - Lead Developer / Architecture
+
+[https://github.com/alamin2507, https://github.com/elmantouhid09] - UI Design / Testing
+
+[https://github.com/itsIrfaaan] - Documentation
