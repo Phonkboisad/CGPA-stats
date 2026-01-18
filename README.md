@@ -39,15 +39,17 @@ The **Student CGPA Pro-System** provides an efficient way to manage academic rec
 ### 1. Prerequisites
 Ensure you have a C compiler installed (GCC, Clang, or MSVC).
 
-### 2. Compilation
-Compile the program using GCC:
+### 2. Compilation and Execution
+Compile and run  the program using GCC:
 ```bash
 gcc student_system.c -o student_system
 ./student_system
 ```
 Note: **Ensure header.txt is in the same directory as the executable to see the branded ASCII logo**
+
+
 👥 Contributors
-[Sadman Bin Morshed] - Lead Developer / Architecture
+[https://github.com/Phonkboisad] - Lead Developer / Architecture
 
 [https://github.com/alamin2507, https://github.com/elmantouhid09] - UI Design / Testing
 
