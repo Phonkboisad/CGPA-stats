@@ -27,4 +27,7 @@ else()
         COMMAND del /s /q ${CMAKE_BINARY_DIR}\*
         COMMENT "Cleaning all build files (Windows)..."
     )
+
 endif()
+# Automatically copy header.txt to the build directory
+configure_file(header.txt ${CMAKE_CURRENT_BINARY_DIR}/header.txt COPYONLY)
