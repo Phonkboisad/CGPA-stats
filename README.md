@@ -1,3 +1,5 @@
+![System Demo](images/demo.png)
+
 # 🎓 Student CGPA Management System (Pro-System)
 
 A robust, console-based management system developed in **Pure C**. This project was designed for a First Year University Group Project to demonstrate a deep understanding of structural programming, file-based persistence, and interactive CLI design.
