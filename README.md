@@ -1,4 +1,4 @@
-![System Demo](images/demo.png)
+![System Demo](image/demo.png)
 
 # 🎓 Student CGPA Management System (Pro-System)
 
