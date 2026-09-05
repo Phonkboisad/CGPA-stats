@@ -57,14 +57,14 @@ void loadingScreen() {
     system(CLEAR);
     printAnimatedHeader(); 
     
-    printf(YELLOW "\n  [SYSTEM] Initializing Modules...\n  " RESET);
+    printf(YELLOW "\n  [SYSTEM] Initializing System...\n  " RESET);
     printf(BLUE "[");
     for(int i = 0; i < 40; i++) {
         printf("="); 
         fflush(stdout);
         SLEEP(30); 
     }
-    printf("]" GREEN " 100%% COMPLETE\n" RESET);
+    printf("]" GREEN " 100%% SYSTEM ONLINE\n" RESET);
     SLEEP(800);
 }
 
@@ -100,13 +100,13 @@ char calculateGrade(float cgpa) {
     if (cgpa >= 3.75) return 'A';
     if (cgpa >= 3.00) return 'B';
     if (cgpa >= 2.25) return 'C';
-    if (cgpa >= 2.00) return 'D';
+    if (cgpa >= 2.00) return 'F';
     return 'F';
 }
 void showGradeGraph() {
     FILE *fptr = fopen("students.txt", "r");
     if (!fptr) {
-        printf(RED "No records found!\n" RESET);
+        printf(RED "Empty Archive\n" RESET);
         SLEEP(1500);
         return;
     }
@@ -132,7 +132,7 @@ void showGradeGraph() {
     // 2. Display the graph
     system(CLEAR);
     drawBox("GRADE DISTRIBUTION GRAPH");
-    char *labels[] = {"Grade A", "Grade B", "Grade C", "Grade D", "Grade F"};
+    char *labels[] = {"Grade A", "Grade B", "Grade C", "Grade F", "Grade F"};
     
     printf("\n");
     for (int i = 0; i < 5; i++) {
@@ -174,7 +174,7 @@ void addStudent() {
             s.subjects[2], s.subjects[3], s.subjects[4], s.cgpa, s.grade);
             
     fclose(fptr);
-    printf(GREEN "\n✔ Record saved successfully!" RESET);
+    printf(GREEN "\n✔ Record saved to system successfully!" RESET);
     SLEEP(1500);
 }
 
